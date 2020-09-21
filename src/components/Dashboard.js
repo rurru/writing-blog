@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import Layout from '../containers/Layout';
 import SocialButtonList from './SocialButtonList';
-import SocialProfileList from './SocialProfileList';
 import { auth } from '../firebase';
 
 import './Dashboard.css';
@@ -85,11 +84,6 @@ class Dashboard extends Component {
     return (
       <Layout>
         <h1>Secure Area</h1>
-        <SocialProfileList
-          auth={auth.getAuth}
-          providerData={this.state.providerData}
-          unlinkedProvider={this.handleUnliknedProvider}
-        />
         <p style={{ textAlign: 'center' }}>
           <strong>Connect Other Social Accounts</strong>
         </p>
