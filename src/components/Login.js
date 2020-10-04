@@ -3,21 +3,9 @@ import { Link } from 'react-router-dom';
 
 import Layout from '../containers/Layout';
 import SocialButtonList from './SocialButtonList';
-import { auth } from '../firebase';
+import { auth } from '../firebase';1
 
 const buttonList = {
-  github: {
-    visible: true,
-    provider: () => {
-      const provider = auth.githubOAuth();
-      provider.addScope('user');
-      return provider;
-    }
-  },
-  twitter: {
-    visible: true,
-    provider: () => auth.twitterOAuth()
-  },
   facebook: {
     visible: true,
     provider: () => auth.facebookOAuth()

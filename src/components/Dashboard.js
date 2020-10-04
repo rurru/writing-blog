@@ -18,18 +18,6 @@ class Dashboard extends Component {
 
   state = {
     buttonList: {
-      github: {
-        visible: true,
-        provider: () => {
-          const provider = auth.githubOAuth();
-          provider.addScope('user');
-          return provider;
-        }
-      },
-      twitter: {
-        visible: true,
-        provider: () => auth.twitterOAuth()
-      },
       facebook: {
         visible: true,
         provider: () => auth.facebookOAuth()

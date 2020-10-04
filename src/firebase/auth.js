@@ -1,5 +1,4 @@
 import firebase from './firebase';
-import { queryAllByText } from '@testing-library/react';
 
 export const getAuth = () => {
   return firebase.auth();
