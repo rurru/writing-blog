@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Layout from '../containers/Layout';
 import SocialButtonList from './SocialButtonList';
-import { auth } from '../firebase';1
+import { auth } from '../firebase';
 
 const buttonList = {
   facebook: {
