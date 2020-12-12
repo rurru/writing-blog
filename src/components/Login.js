@@ -24,9 +24,8 @@ class Login extends Component {
   render() {
     return (
       <Layout contentCenter={true}>
-        <p>Connect With</p>
         <SocialButtonList buttonList={buttonList} auth={auth.getAuth} />
-        <Link to="/about">About</Link>
+
       </Layout>
     );
   }
