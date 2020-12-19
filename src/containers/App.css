@@ -1,25 +1,35 @@
-button {
-  border: none;
-  border-radius: 4px;
-  height: 45px;
-  background-color: #aaaaaa;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  letter-spacing: 0.07rem;
-  padding: 3px;
-  margin: 5px;
+body {
+  text-align:center;
+  
+	background-color: #3a291a;
 }
 
-button:hover {
-  background-color: #929292;
+.container {
+	background-image: url("../assets/entry-bg.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	margin: auto;
+	width: 900px;
+	height: 100%;
 }
 
-.hidden {
-  display: none;
+.entry {
+	background-image: url("../assets/sgbg.jpg");
+	 width: 400px;
+	 height: 350px;
+	 font-weight: 500;
+	 font-family: "Noto Serif";
+	 padding: 30px;
+	 font-size: 14px;
+	 text-align: left;
+	 margin: 20px 0 0 20px;
+	 border: 3px solid #f4e7b0;
 }
 
-.text--center {
-  text-align: center;
+#nav-bar {
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid #777;
+	border-top: 1px solid #999;
+	background-color: #f4e7b0;
 }

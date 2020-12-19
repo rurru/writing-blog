@@ -15,9 +15,6 @@ const defaultProps = {
 const Layout = ({ children, contentCenter }) => {
   return (
     <section>
-      <header>
-        <h1>OAuth Authentication with Firebase</h1>
-      </header>
       <main className={contentCenter ? 'content-center' : ''}>{children}</main>
       <footer>
       </footer>
