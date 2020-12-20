@@ -6,15 +6,7 @@ import './SocialButtonList.css';
 
 const propTypes = {
   buttonList: PropTypes.shape({
-    github: PropTypes.shape({
-      visible: PropTypes.bool.isRequired,
-      provider: PropTypes.func.isRequired
-    }),
-    twitter: PropTypes.shape({
-      visible: PropTypes.bool.isRequired,
-      provider: PropTypes.func.isRequired
-    }),
-    facebook: PropTypes.shape({
+    Login: PropTypes.shape({
       visible: PropTypes.bool.isRequired,
       provider: PropTypes.func.isRequired
     })

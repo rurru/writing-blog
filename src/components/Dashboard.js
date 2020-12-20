@@ -71,10 +71,6 @@ class Dashboard extends Component {
   render() {
     return (
       <Layout>
-        <h1>Secure Area</h1>
-        <p style={{ textAlign: 'center' }}>
-          <strong>Connect Other Social Accounts</strong>
-        </p>
         <SocialButtonList
           buttonList={this.state.buttonList}
           auth={auth.getAuth}

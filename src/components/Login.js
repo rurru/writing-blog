@@ -6,7 +6,7 @@ import SocialButtonList from './SocialButtonList';
 import { auth } from '../firebase';
 
 const buttonList = {
-  facebook: {
+  Login: {
     visible: true,
     provider: () => auth.facebookOAuth()
   }
@@ -23,7 +23,7 @@ class Login extends Component {
 
   render() {
     return (
-      <Layout contentCenter={true}>
+      <Layout>
         <SocialButtonList buttonList={buttonList} auth={auth.getAuth} />
 
       </Layout>

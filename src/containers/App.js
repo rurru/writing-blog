@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { auth } from '../firebase';
 
 import Login from '../components/Login';
+import MenuBar from '../components/Header/MenuBar';
 import Dashboard from '../components/Dashboard';
 import Entry from '../components/Post/Entry';
 import withAuthentication from '../containers/withAuthentication';
@@ -12,12 +14,15 @@ class App extends Component {
     return (
       <div id = "app">
         <div id = "header" />
+        <MenuBar>
         <Router>
-          <Switch>
-            <Route path="/" exact component={Login} />
-            <Route path="/dashboard" component={withAuthentication(Dashboard)} />
-          </Switch>
-        </Router>
+            <Switch>
+              <Route path="/" exact component={Login} />
+              <Route path="/dashboard" component={withAuthentication(Dashboard)} />
+            </Switch>
+          </Router>
+        </MenuBar>
+        <Entry />
         <Entry />
       </div>
     );
