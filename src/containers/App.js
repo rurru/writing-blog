@@ -11,6 +11,7 @@ class App extends Component {
   render() {
     return (
       <div id = "app">
+        <div id = "header" />
         <Router>
           <Switch>
             <Route path="/" exact component={Login} />
