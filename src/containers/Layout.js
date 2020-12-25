@@ -14,9 +14,7 @@ const defaultProps = {
 
 const Layout = ({ children, contentCenter }) => {
   return (
-    <section>
       <main className={contentCenter ? 'content-center' : ''}>{children}</main>
-    </section>
   );
 };
 

@@ -1,11 +1,17 @@
 .btn__social--list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
   }
   
   .btn__social {
-    width: 150px;
+    width: 75px;
+    height: 48px;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-left: 1px solid #aaa;
+    background-color: #f4e7b0;
   }
   
   .btn--github {
@@ -24,10 +30,3 @@
     background-color: rgb(67, 158, 228);
   }
   
-  .btn--facebook {
-    height: 50px;
-  }
-  
-  .btn--facebook:hover {
-    background-color: rgb(45, 77, 146);
-  }
