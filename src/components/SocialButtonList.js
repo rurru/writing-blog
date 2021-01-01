@@ -6,7 +6,7 @@ import './SocialButtonList.css';
 
 const propTypes = {
   buttonList: PropTypes.shape({
-    Login: PropTypes.shape({
+    facebook: PropTypes.shape({
       visible: PropTypes.bool.isRequired,
       provider: PropTypes.func.isRequired
     })
@@ -57,7 +57,7 @@ const SocialButtonList = ({ history, buttonList, auth, currentProviders }) => {
         className={`btn__social btn--${provder} ${!visible && 'hidden'}`}
         onClick={e => authenticate(e, provder)}
       >
-        {provder}
+        {auth().currentUser ? 'Logout' : 'Login'}
       </button>
     );
   };

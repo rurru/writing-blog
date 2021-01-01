@@ -20,7 +20,8 @@ class Dashboard extends Component {
     buttonList: {
       facebook: {
         visible: true,
-        provider: () => auth.facebookOAuth()
+        provider: () => auth.facebookOAuth(),
+        label: 'Logout'
       }
     },
     providerData: this.props.providerData
