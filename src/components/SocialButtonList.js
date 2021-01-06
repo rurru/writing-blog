@@ -55,7 +55,8 @@ const SocialButtonList = ({ history, buttonList, auth, currentProviders }) => {
       <button
         key={provder}
         className={`btn__social btn--${provder} ${!visible && 'hidden'}`}
-        onClick={e => authenticate(e, provder)}
+        onClick={auth().currentUser ? 
+          e => auth().signOut() : e => authenticate(e, provder)}
       >
         {auth().currentUser ? 'Logout' : 'Login'}
       </button>

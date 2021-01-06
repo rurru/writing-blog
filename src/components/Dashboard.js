@@ -77,12 +77,6 @@ class Dashboard extends Component {
           auth={auth.getAuth}
           currentProviders={this.handleCurrentProviders}
         />
-        <button
-          className="btn__logout"
-          onClick={() => auth.getAuth().signOut()}
-        >
-          Logout
-        </button>
       </Layout>
     );
   }
