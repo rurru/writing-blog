@@ -51,6 +51,9 @@ const SocialButtonList = ({ history, buttonList, auth, currentProviders }) => {
   const renderButtonList = provder => {
     const visible = buttonList[provder].visible;
 
+    //Remove this later, but keep for now as a reminder of what to compare against
+    console.log(auth().currentUser.uid);
+
     return (
       <button
         key={provder}

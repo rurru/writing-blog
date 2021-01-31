@@ -5,7 +5,7 @@ import { auth } from '../firebase';
 import Login from '../components/Login';
 import MenuBar from '../components/Header/MenuBar';
 import Dashboard from '../components/Dashboard';
-import Entry from '../components/Post/Entry';
+import EntryList from '../components/Post/EntryList';
 import withAuthentication from '../containers/withAuthentication';
 import './App.css';
 
@@ -22,7 +22,7 @@ class App extends Component {
             </Switch>
           </Router>
         </MenuBar>
-        <Entry />
+        <EntryList />
       </div>
     );
   }

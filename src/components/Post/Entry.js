@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
 
 class Entry extends Component {
-
-
     render () {
         return (
             <div class = "entry">
